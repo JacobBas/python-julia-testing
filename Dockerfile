@@ -3,7 +3,6 @@ FROM julia:1.7.2-buster as julia_builder
 WORKDIR /src
 ADD . .
 
-
 # import the base image for python 3.9.10
 FROM python:3.9.10-slim-buster as python_builder
 WORKDIR /src
