@@ -1,1 +1,6 @@
-pandas
+# for working with data
+pandas==1.4.1
+pyarrow==7.0.0
+
+# for creating fake data
+Faker==13.3.0
