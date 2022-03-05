@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  dev:
+    volumes: 
+      - ./:/src/:rw
+    build: .
+
