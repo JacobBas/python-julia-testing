@@ -12,7 +12,6 @@ RUN python3 -m pip install -r requirements.txt
 
 # making sure that we retain the julia build step
 COPY --from=julia_builder /usr/local/julia /usr/local/
-# RUN julia --project=. -e "using Pkg; Pkg.resolve()" 
 RUN julia --project=. -e "using Pkg; Pkg.instantiate()" 
 
 # final command to run to open the container
